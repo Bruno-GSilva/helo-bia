@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid black; */
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    width: 500px;
+    height: 450px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 15px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px;
+}
+
+#titule{
+    width: 200px;
+    height: 150px;
+}
+#card h3{
+    font-size: 48px;
+    font-weight: 600px;
+    border: 1px solid;
+}
+#card h3 span{
+    color: yellow;
+}
+
+figure{
+    top: -105px;
+    width: 260px;
+    position: relative;
+}
+figure #pensando{
+    z-index: 2;
+    position: absolute;
+}
+figure #certa{
+    z-index: -1;
+    position: absolute;
+}
+figure #errada{
+    z-index: 1;
+    position: absolute;
+}
+#resposta{
+    display: flex;
+    gap: 10px;
+}
+#tentar{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+#palpites{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
